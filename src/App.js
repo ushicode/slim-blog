@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  return (
+  const title = "Welcome to slim blog";
+  const likes = 60;
+  const link = "https://www.github.com"
+  const person = {
+    name: 'John',
+    age: 28
+  }
+
+  return ( //Returning JSX template. Note babel, behind the scene converts JSX to HTML
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App; //Exporting the App function in this component for external use
