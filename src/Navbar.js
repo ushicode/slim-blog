@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <h1> &#x0226E; Slim Blog &#x0226F;</h1>
+            <h1> &#123; Slim Blog &#125;</h1>
             
             
             <div className="links">
